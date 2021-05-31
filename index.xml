@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://voidtuki.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://voidtuki.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grammar in use</title>
+      <link>https://voidtuki.github.io/post/english/grammar-in-use-elementary/notes/1/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/english/grammar-in-use-elementary/notes/1/</guid>
+      
+        <description>&lt;p&gt;思维导图&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Python词云图</title>
+      <link>https://voidtuki.github.io/post/python%E9%A1%B9%E7%9B%AE-%E8%AF%8D%E4%BA%91%E5%9B%BE/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/python%E9%A1%B9%E7%9B%AE-%E8%AF%8D%E4%BA%91%E5%9B%BE/</guid>
+      
+        <description>&lt;p&gt;图表库：pyecharts、子库options、子库WordCloud
+分词库：jieba
+随机数库：random
+时间库：time、子库sleep&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>个人博客搭建-1</title>
+      <link>https://voidtuki.github.io/post/%E6%AF%8F%E5%91%A8%E5%B0%8F%E7%BB%83%E4%B9%A0/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/%E6%AF%8F%E5%91%A8%E5%B0%8F%E7%BB%83%E4%B9%A0/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>今日任务</title>
+      <link>https://voidtuki.github.io/post/blog-3/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/blog-3/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>博客声明</title>
+      <link>https://voidtuki.github.io/about/%E5%8D%9A%E5%AE%A2%E5%A3%B0%E6%98%8E/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/about/%E5%8D%9A%E5%AE%A2%E5%A3%B0%E6%98%8E/</guid>
+      
+        <description>&lt;p&gt;&amp;ndash;&amp;gt;点击查看&amp;lt;&amp;ndash;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://voidtuki.github.io/post/blog/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/blog/</guid>
+      
+        <description>&lt;p&gt;我是VOID&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>今日任务</title>
+      <link>https://voidtuki.github.io/post/blog-2/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/blog-2/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://voidtuki.github.io/post/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/archives/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://voidtuki.github.io/post/contact/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/contact/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://voidtuki.github.io/post/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/math-typesetting/</guid>
+      
+        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Guide to Thumbnails in Hugo</title>
+      <link>https://voidtuki.github.io/post/image-test/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/image-test/</guid>
+      
+        <description>Thumbnails can be enabled easily by setting the thumbnail parameter in the frontmatter to an image such as &amp;quot;images/landscape.jpg&amp;quot;.
+Make sure to copy the image the static/images/ directory.
+If put together, it will look like this (that&amp;rsquo;s in fact this post&amp;rsquo;s frontmatter):
++++ author = &amp;#34;Hugo Authors&amp;#34; title = &amp;#34;Guide to Thumbnails in Hugo&amp;#34; date = &amp;#34;2019-03-04&amp;#34; description = &amp;#34;Guide to Thumbnails in Hugo&amp;#34; tags = [ &amp;#34;thumbnail&amp;#34;, ] thumbnail= &amp;#34;images/landscape.</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://voidtuki.github.io/post/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/about/</guid>
+      
+        <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

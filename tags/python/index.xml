@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on </title>
+    <link>https://voidtuki.github.io/tags/python/</link>
+    <description>Recent content in Python on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 30 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://voidtuki.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python词云图</title>
+      <link>https://voidtuki.github.io/post/python%E9%A1%B9%E7%9B%AE-%E8%AF%8D%E4%BA%91%E5%9B%BE/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://voidtuki.github.io/post/python%E9%A1%B9%E7%9B%AE-%E8%AF%8D%E4%BA%91%E5%9B%BE/</guid>
+      
+        <description>&lt;p&gt;图表库：pyecharts、子库options、子库WordCloud
+分词库：jieba
+随机数库：random
+时间库：time、子库sleep&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

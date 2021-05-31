@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme=""><head>
+    <title> I AM VOIDTUKI | Python词云图 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.81.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Call me Zhou">
+    
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/main.min.f79a5de55310cc058fc81804d033ddb955937d778bd533d9ea05b1c798501013.css"
+        integrity="sha256-95pd5VMQzAWPyBgE0DPduVWTfXeL1TPZ6gWxx5hQEBM="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/python%E9%A1%B9%E7%9B%AE-%E8%AF%8D%E4%BA%91%E5%9B%BE/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python词云图"/>
+<meta name="twitter:description" content="图表库：pyecharts、子库options、子库WordCloud
+分词库：jieba
+随机数库：random
+时间库：time、子库sleep"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/yuelun.jpg" alt="profile picture">
+            <h3 title=""><a href="/">VOID</a></h3>
+            <div class="description">
+                <p>Call me Zhou</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://raw.githubusercontent.com/voidtuki/voidtuki.github.io/master/images/71622378970_.pic_hd.jpg" rel="me" aria-label="QQ">
+                    <i class="fab fa-qq fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://mail.qq.com/cgi-bin/loginpage" rel="me" aria-label="qq-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://raw.githubusercontent.com/voidtuki/voidtuki.github.io/e8cac7e28ce3c1b864538ceba18bb01c972606d7/images/51622378211_.pic_hd.jpg" rel="me" aria-label="weixin">
+                    <i class="fab fa-weixin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://raw.githubusercontent.com/voidtuki/voidtuki.github.io/master/images/81622379294_.pic_hd.jpg" rel="me" aria-label="weibo">
+                    <i class="fab fa-weibo fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy;  I AM VOIDTUKI 2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">首页</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">帖子</a></li>
+        
+            
+            <li><a 
+                   href="/account/%E8%B4%A6%E6%88%B7.html"
+                        
+                   title="">账户</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">关于</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <img class="post-thumbnail" src="/images/apple.jpg" alt="Thumbnail image">
+            
+            <div class="post-title">
+                <h3>Python词云图</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Sun, May 30, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>图表库：pyecharts、子库options、子库WordCloud
+分词库：jieba
+随机数库：random
+时间库：time、子库sleep</p>
+<hr>
+<h2 id="主函数代码-mainpy">主函数代码 (main.py)</h2>
+<pre><code>'''词云图'''
+from pyecharts import options as opts
+from pyecharts.charts import WordCloud
+#导入分词库
+import jieba
+#导入随机数库
+import random
+#导入time包中的sleep库
+from time import sleep
+
+#全局变量
+# 定义列表
+column_double = []
+# 自定义标志
+flag = 1
+
+while(True):
+
+    #数据分组
+    def group_by():
+        text = open('输入.txt', &quot;r&quot;,encoding='utf-8').read()  # 文件读取
+        cut_text = jieba.lcut(text)  # 结巴分词，生成列表
+        result = &quot; &quot;.join(cut_text)  # 必须给个符号将分隔开的词重新拼成字符串,否则不能绘制词云
+
+        return cut_text
+
+    #判断名称对应值大小
+    def number_value():
+        print(&quot;请输入自定义数值：&quot;)
+        number = eval(input())
+        if number &gt;= 1000:
+            print(&quot;这个值太大了&quot;)
+        elif number &lt;= 0:
+            print(&quot;没有值，重新输入&quot;)
+        else:
+            return number
+
+    #输入名称
+    def column():
+        #遍历列表值
+        global flag
+        for cut in group_by():
+
+            #跳过回车符
+            if cut == '\n':
+                continue
+
+            #用户自定义
+            if flag == 1:
+                print(&quot;请输入自定义名称：&quot;)
+                name = input()
+                #判断值是否在名称列表中
+                if name in group_by():
+
+                    #调用值判断，接受返回值，赋值
+                    number = number_value()
+                    column = (name,number)
+                    column_double.append(column)
+
+                    print('是否关闭自定义（q to quit）?')
+                    if 'q' == input():
+                        flag = 0
+
+                #不在值则退出
+                else:
+                    flag = 0
+                    continue
+
+            else:
+                #随机数生成
+                number = random.randint(1,100)
+                column = (cut, number)
+                column_double.append(column)
+
+        print(column_double)
+
+        return column_double
+
+    c = (
+        WordCloud(init_opts=opts.InitOpts(width=&quot;3300px&quot;, height=&quot;2400px&quot;))
+        .add(&quot;&quot;,column(), word_size_range=[1,60], mask_image=&quot;/Volumes/存储/photo/败家之眼.png&quot;)#输入图片地址
+        .set_global_opts(title_opts=opts.TitleOpts(title=&quot;WordCloud-自定义图片&quot;))
+        .render(&quot;词云图.html&quot;)
+    )
+
+    # 休眠五秒继续
+    sleep(1)
+</code></pre>
+<hr>
+<h2 id="输入词文件-输入txt">输入词文件 (输入.txt)</h2>
+<pre><code>    文件写入数据即可
+    ASUS
+    ROG
+</code></pre>
+<hr>
+<h2 id="网页文件-词云图html">网页文件 (词云图.html)</h2>
+<pre><code>    即普通网页格式，浏览器打开
+</code></pre>
+<hr>
+<h2 id="全局配置文件-global_optionspy">全局配置文件 (global_options.py)</h2>
+<pre><code>    class InitOpts(BasicOpts):
+        #全局配置修改
+        def __init__(
+            self,
+            width: str = &quot;900px&quot;,#画布宽度
+            height: str = &quot;500px&quot;,#画布高度
+            chart_id: Optional[str] = None,
+            renderer: str = RenderType.CANVAS,
+            page_title: str = CurrentConfig.PAGE_TITLE,
+            theme: str = ThemeType.WHITE,
+            bg_color: Union[str, dict] = None,
+            js_host: str = &quot;&quot;,
+            animation_opts: Union[AnimationOpts, dict] = AnimationOpts(),
+        ):
+            self.opts: dict = {
+                &quot;width&quot;: width,
+                &quot;height&quot;: height,
+                &quot;chart_id&quot;: chart_id,
+                &quot;renderer&quot;: renderer,
+                &quot;page_title&quot;: page_title,
+                &quot;theme&quot;: theme,
+                &quot;bg_color&quot;: bg_color,
+                &quot;js_host&quot;: js_host,
+                &quot;animationOpts&quot;: animation_opts,
+            }
+</code></pre>
+<hr>
+<h2 id="词云配置文件-wordcloudpy">词云配置文件 (wordcloud.py)</h2>
+<pre><code>    #颜色值修改，rgb值
+    def gen_color():
+        &quot;&quot;&quot;
+        generate random color for WordCloud
+        &quot;&quot;&quot;
+        return &quot;rgb(%s,%s,%s)&quot; % (
+            random.randint(158,160),
+            random.randint(158,160),
+            random.randint(158,160),
+        )
+        
+    def add(
+            self,
+            series_name: str,
+            data_pair: types.Sequence,
+            *,
+            shape: str = &quot;cardioid&quot;,    #生成类型，圆形、三角形、倒三角、五边形、钻石等
+            mask_image: types.Optional[str] = None,   #图片地址,以图片为遮罩
+            word_gap: types.Numeric = 10,   #词间隙
+            word_size_range: types.Optional[types.Sequence] = None,   #词大小区间
+            rotate_step: types.Numeric = 1,   #词大小增加步长
+            pos_left: types.Optional[str] = None,   #离左边远，左加右减
+            pos_top: types.Optional[str] = None,    #离定单远，上加下减
+            pos_right: types.Optional[str] = None,  #第四象限
+            pos_bottom: types.Optional[str] = None,
+            width: types.Optional[str] = None,     #词云画布大小，不是全局，是内画布
+            height: types.Optional[str] = None,
+            is_draw_out_of_bound: bool = False,     #是否可超出图形范围
+            tooltip_opts: types.Tooltip = None,
+            itemstyle_opts: types.ItemStyle = None,
+            textstyle_opts: types.TextStyle = None,
+            emphasis_shadow_blur: types.Optional[types.Numeric] = None,
+            emphasis_shadow_color: types.Optional[str] = None,
+        ):
+</code></pre></div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/python/">Python</a><a class="tag" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.83cb1dd5fea8d42d87d1e601a07faa73089ad0ef9ccfe5daf6041289ebcc4e46.js"
+        integrity="sha256-g8sd1f6o1C2H0eYBoH&#43;qcwia0O&#43;cz&#43;Xa9gQSievMTkY="
+        crossorigin="anonymous"></script></body>
+
+</html>
